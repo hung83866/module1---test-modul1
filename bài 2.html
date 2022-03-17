@@ -5,19 +5,21 @@
     <title>Title</title>
 </head>
 <body>
-<script>
-    let arr1 = [2, 3, 5, -7, 5, -8, 15, 100, 4]
-    let x = +prompt('nhập giá trị của x');
 
-    function viTriTrongMang(a, arr) {
-        if (arr.indexOf(a)==-1){
-            return 'số không thuộc mảng';
-        }else {
-            return  'vị trí của số trong mảng là : '+arr.indexOf(a);
+</body>
+</html>
+<script>
+    let arr = [2, 4, 3, 5, 15, -1, -4, 51]
+    let x = +prompt('nhập số ');
+
+    function check(arr, a) {
+        for (let i = 0; i < arr.length; i++) {
+            if (a == arr[i]) {
+                document.write( 'vi trí trong chuỗi = '+arr.indexOf(a));
+            }
         }
     }
 
-    console.log(viTriTrongMang(x,arr1));
+    check(arr, x)
+
 </script>
-</body>
-</html>
