@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 id="write"></h1>
+</body>
+</html>
+<script>
+    let str = prompt('nhập chuỗi')
+    let arr = str.split('');
+
+    function kyTuSoNguyenAm() {
+        let nguyenAm = ["a", "o", "e", "u", "i"];
+        let count = 0;
+        for (let i = 0; i < arr.length; i++) {
+            for (let j = 0; j < nguyenAm.length; j++) {
+                if (nguyenAm[j] == arr[i]) {
+                    count++;
+                }
+            }
+
+        }
+        alert('Mảng có ' + count + ' nguyên âm');
+    }
+
+    kyTuSoNguyenAm();
+
+
+</script>
