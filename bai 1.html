@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xây dựng hàm giải phương trình bậc nhất ax + b = 0</title>
+</head>
+<body>
+<script>
+    function giaiHamBacNhat(a,b){
+        if (a<=0){
+            return 'phương trình vô nghiệm';
+        }
+        else {
+            return 'phương trình có nghiệm x = '+(-b/a)
+        }
+    }
+    document.write(giaiHamBacNhat(5,8));
+</script>
+</body>
+</html>
