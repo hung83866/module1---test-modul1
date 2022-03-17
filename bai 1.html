@@ -7,14 +7,18 @@
 <body>
 <script>
     function giaiHamBacNhat(a,b){
-        if (a<=0){
-            return 'phương trình vô nghiệm';
-        }
-        else {
+        if (a == 0){
+            if (b==0){
+                return 'phương trình vô số nghiệm';
+            }else {
+                return 'phương trình vô nghiệm'
+            }
+        }else {
             return 'phương trình có nghiệm x = '+(-b/a)
         }
     }
-    document.write(giaiHamBacNhat(5,8));
+
+    document.write(giaiHamBacNhat(0,0));
 </script>
 </body>
 </html>
