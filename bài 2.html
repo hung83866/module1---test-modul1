@@ -2,22 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>tìm vị trí số nhập vào</title>
 </head>
 <body>
 
 </body>
 </html>
 <script>
+
+
     let arr = [2, 4, 3, 5, 15, -1, -4, 51]
-    let x = +prompt('nhập số ');
+    let x = parseInt(prompt('nhập số '));
 
     function check(arr, a) {
+        let check =true
         for (let i = 0; i < arr.length; i++) {
-            if (a == arr[i]) {
-                document.write( 'vi trí trong chuỗi = '+arr.indexOf(a));
+            if (a === arr[i]) {
+                alert('vị trí = ' + i)
+                check=true
+                break;
+            }else {
+                check =false;
             }
         }
+        if (check==false){
+            alert('không thuộc chuỗi')
+        }
+
     }
 
     check(arr, x)
